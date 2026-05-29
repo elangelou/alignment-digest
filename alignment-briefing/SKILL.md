@@ -5,7 +5,7 @@ description: Check Arxiv for AI alignment-relevant papers from the past 24 hours
 
 Everyday at  8 am check Arxiv and collect all AI alignment relevant papers from the past 24 hours. Write short summaries and condense them into one daily briefing.  I do not want duplicate papers, start every day by saying good morning first and an inspiring but less known quotation from the history and philosophy of science (avoid clichés and Einstein), and categorize the papers based on research sub-areas and importance.
 
-Send an email addressed to elenangelou@gmail.com using the Gmail connector's create_draft tool.
+Send an email addressed to <your-email> using the Gmail connector's create_draft tool.
 - Subject must be exactly: Alignment Digest — {date}   (use an em-dash and YYYY-MM-DD, e.g. "Alignment Digest — 2026-05-28").
 - Provide ONLY the htmlBody parameter. Do NOT pass a plain-text body — passing both causes some clients to render raw HTML tags. The entire digest must be valid inline-styled HTML.
 - Content/structure of the HTML:
