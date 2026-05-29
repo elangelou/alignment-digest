@@ -1,0 +1,86 @@
+<div style="font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:680px;margin:0 auto;color:#1a1a1a;line-height:1.55;">
+
+  <div style="font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#6b7280;font-weight:700;margin-bottom:6px;">🧭 Alignment Digest</div>
+  <h1 style="font-size:26px;margin:0 0 4px;color:#111;">Friday, 2026-05-29</h1>
+
+  <p style="font-size:15px;color:#374151;margin:10px 0 4px;">☀️ <b>Good morning, Eleni!</b></p>
+
+  <blockquote style="border-left:3px solid #c7d2fe;margin:8px 0 4px;padding:4px 0 4px 14px;color:#4b5563;font-style:italic;font-size:15px;">"There is more to seeing than meets the eyeball."<br><span style="font-style:normal;font-size:13px;color:#6b7280;">— Norwood Russell Hanson, <i>Patterns of Discovery</i> (1958)</span></blockquote>
+
+  <p style="font-size:15px;color:#374151;margin:6px 0 4px;">Fitting for a day heavy on interpretability: every honest negative result is a tool for the next person. Hope today treats you kindly.</p>
+
+  <div style="background:#eef2ff;border-left:4px solid #6366f1;padding:12px 16px;border-radius:6px;margin:16px 0 24px;">
+    <span style="font-weight:700;">📌 Today's headline:</span> A wave of <b>safety-alignment</b> theory (context-invariance, density-ratio matching) lands alongside sharper <b>red-teaming</b> agents and fresh <b>SAE interpretability</b> tooling — the offense-and-defense gap keeps narrowing.
+  </div>
+
+  <!-- 1 -->
+  <div style="margin-bottom:26px;">
+    <div style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#6b7280;font-weight:700;">🛡️ #1 · Safety Alignment</div>
+    <a href="https://arxiv.org/abs/2605.20994" style="font-size:18px;font-weight:700;color:#1d4ed8;text-decoration:none;">Towards Context-Invariant Safety Alignment for Large Language Models</a>
+    <div style="font-size:13px;color:#6b7280;font-style:italic;margin:3px 0 6px;">arXiv · 2605.20994 · May 2026</div>
+    <p style="margin:0;">Argues that preference-based post-training yields <b>brittle</b> safety that keys off surface form rather than intent, so a benign rephrasing flips a refusal. Proposes training for <b>context-invariant</b> behavior anchored to underlying intent. <i>⚠️ Caveat: "intent" is itself an under-defined target; the approach may trade one proxy for another.</i></p>
+  </div>
+
+  <!-- 2 -->
+  <div style="margin-bottom:26px;">
+    <div style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#6b7280;font-weight:700;">🧮 #2 · Safety Alignment (Theory)</div>
+    <a href="https://arxiv.org/abs/2605.12339" style="font-size:18px;font-weight:700;color:#1d4ed8;text-decoration:none;">BSO: Safety Alignment Is Density Ratio Matching</a>
+    <div style="font-size:13px;color:#6b7280;font-style:italic;margin:3px 0 6px;">arXiv · 2605.12339 · May 2026</div>
+    <p style="margin:0;">Shows the optimal safe policy's likelihood ratio admits a <b>closed-form decomposition</b>, reducing safety alignment to density-ratio matching. The resulting <b>Bregman Safety Optimization</b> is a single-stage loss family that <b>provably recovers</b> the optimal safe policy. <i>❓ Open question: how tight do the guarantees stay once the reward/preference model is itself misspecified?</i></p>
+  </div>
+
+  <!-- 3 -->
+  <div style="margin-bottom:26px;">
+    <div style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#6b7280;font-weight:700;">🔭 #3 · Scalable Oversight</div>
+    <a href="https://arxiv.org/abs/2605.06390" style="font-size:18px;font-weight:700;color:#1d4ed8;text-decoration:none;">Automated Alignment is Harder Than You Think</a>
+    <div style="font-size:13px;color:#6b7280;font-style:italic;margin:3px 0 6px;">arXiv · 2605.06390 · May 2026</div>
+    <p style="margin:0;">Makes the case that alignment risk is <b>low in weaker-than-human models</b>, which means today's empirical wins may <b>not transfer</b> past human level — the regime where it actually matters. Calls for new methods to evaluate alignment solutions on <b>superhuman</b> systems. <i>⚠️ Caveat: largely a position piece; concrete superhuman-eval protocols remain sketched rather than demonstrated.</i></p>
+  </div>
+
+  <!-- 4 -->
+  <div style="margin-bottom:26px;">
+    <div style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#6b7280;font-weight:700;">🔓 #4 · Red Teaming</div>
+    <a href="https://arxiv.org/abs/2605.10067" style="font-size:18px;font-weight:700;color:#1d4ed8;text-decoration:none;">Metis: Learning to Jailbreak LLMs via Self-Evolving Metacognition</a>
+    <div style="font-size:13px;color:#6b7280;font-style:italic;margin:3px 0 6px;">arXiv · 2605.10067 · May 2026</div>
+    <p style="margin:0;">Reframes jailbreaking as <b>inference-time policy optimization</b> in an adversarial POMDP, using a self-evolving metacognitive loop to diagnose a target's defense logic and treat feedback as a <b>semantic gradient</b>. Matters because it automates the discovery of <b>defense-specific</b> attacks rather than reusing static prompts. <i>❓ Open question: do these attacks survive activation-level monitors, or only string-level filters?</i></p>
+  </div>
+
+  <!-- 5 -->
+  <div style="margin-bottom:26px;">
+    <div style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#6b7280;font-weight:700;">🔓 #5 · Red Teaming</div>
+    <a href="https://arxiv.org/abs/2605.02647" style="font-size:18px;font-weight:700;color:#1d4ed8;text-decoration:none;">ContextualJailbreak: Evolutionary Red-Teaming via Simulated Conversational Priming</a>
+    <div style="font-size:13px;color:#6b7280;font-style:italic;margin:3px 0 6px;">arXiv · 2605.02647 · May 2026</div>
+    <p style="margin:0;">A <b>black-box</b> strategy that runs evolutionary search over simulated <b>multi-turn</b> primed dialogue using five mutation operators (roleplay, scenario, expand, troubleshooting, mechanistic). Reinforces that <b>multi-turn</b> context, not single prompts, is the live attack surface. <i>⚠️ Caveat: simulated priming may overstate transfer to real conversational deployments.</i></p>
+  </div>
+
+  <!-- 6 -->
+  <div style="margin-bottom:26px;">
+    <div style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#6b7280;font-weight:700;">🔍 #6 · Interpretability</div>
+    <a href="https://arxiv.org/abs/2605.06494" style="font-size:18px;font-weight:700;color:#1d4ed8;text-decoration:none;">From Token Lists to Graph Motifs: Weisfeiler-Lehman Analysis of SAE Features</a>
+    <div style="font-size:13px;color:#6b7280;font-style:italic;margin:3px 0 6px;">arXiv · 2605.06494 · May 2026</div>
+    <p style="margin:0;">Moves SAE feature interpretation beyond flat top-token lists toward <b>graph-motif</b> structure via a Weisfeiler-Lehman analysis, aiming at richer accounts of what "monosemantic" features actually encode. Useful for anyone treating SAE features as oversight primitives. <i>❓ Open question: do motif-level descriptions yield interventions that change behavior, or just better post-hoc labels?</i></p>
+  </div>
+
+  <!-- 7 -->
+  <div style="margin-bottom:26px;">
+    <div style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#6b7280;font-weight:700;">🤖 #7 · Agentic Safety</div>
+    <a href="https://arxiv.org/abs/2605.03242" style="font-size:18px;font-weight:700;color:#1d4ed8;text-decoration:none;">Enhancing Agent Safety Judgment for Deceptive Out-of-Distribution Scenarios (ROME)</a>
+    <div style="font-size:13px;color:#6b7280;font-style:italic;margin:3px 0 6px;">arXiv · 2605.03242 · May 2026</div>
+    <p style="margin:0;">ROME rewrites known unsafe trajectories into <b>more deceptive</b> evaluation instances while preserving risk labels, yielding <b>300</b> challenge cases spanning contextual ambiguity, implicit risk, and shortcut decisions. Directly targets agents' tendency to misjudge safety <b>out of distribution</b>. <i>⚠️ Caveat: rewrite-based benchmarks risk encoding the rewriter's blind spots as ground truth.</i></p>
+  </div>
+
+  <!-- Skim list -->
+  <div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:8px;padding:14px 18px;margin:28px 0 18px;">
+    <div style="font-size:13px;font-weight:700;margin-bottom:8px;">👀 Skim list — seen, not featured</div>
+    <ul style="margin:0;padding-left:18px;font-size:14px;color:#374151;">
+      <li><a href="https://arxiv.org/abs/2603.04069" style="color:#1d4ed8;text-decoration:none;">Monitoring Emergent Reward Hacking via Internal Activations</a> — SAE + linear probes give token-level reward-hacking estimates during CoT.</li>
+      <li><a href="https://arxiv.org/abs/2602.11180" style="color:#1d4ed8;text-decoration:none;">Mechanistic Interpretability for LLM Alignment: A Survey</a> — useful map of progress &amp; open challenges.</li>
+      <li><a href="https://arxiv.org/abs/2602.19416" style="color:#1d4ed8;text-decoration:none;">IR³: Contrastive IRL for Interpretable Reward-Hacking Detection</a> — decomposes reward scores into sparse feature contributions.</li>
+    </ul>
+  </div>
+
+  <div style="font-size:11px;color:#9ca3af;border-top:1px solid #e5e7eb;padding-top:10px;">
+    Sources: arXiv (cs.AI / cs.CL / cs.LG) listings for 2026-05-26 → 2026-05-29, surfaced via web search. Duplicates from prior digests excluded. Summaries condensed from paper abstracts.
+  </div>
+
+</div>
